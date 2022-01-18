@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+body {
+  font-family: 'Comfortaa';
+  background-size: 100%;
+  margin: 0;
+  background-image: url(img/wallpaper.jpg);
+  height: auto;
+  background-attachment: fixed;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* # START */
+#hamster {
+  font-size: 40px;
+  text-align: center;
+  text-shadow: 1px 2px 5px 10px #17181c;
+  color: #000;
+}
+
+#tred {
+  text-align: center;
+  text-shadow: #17181c;
+  color: #ffff;
+}
+
+#abstract {
+  text-align: center;
+  text-shadow: 1px 2px 5px 10px #ffff;
+  color: #ffff;
+}
+
+#art {
+  text-align: center;
+  text-shadow: 1px 2px 5px 10px #ffff;
+  color: #fff;
+}
+
+/* # END*/
+
+/*Menu START */
+
+nav {
+	background: #5434af;
+	height: 80px;
+	width: 100%;
+}
+
+label.logo {
+	color: #fff;
+	font-size: 35px;
+	line-height: 80px;
+	padding: 0 100px;
+	font-weight: bold;
+}
+
+nav ul {
+	float: right;
+	margin-right: 20px;
+}
+
+nav ul li {
+	display: inline-block;
+	line-height: 80px;
+	margin: 0 5px;
+}
+
+nav ul li a {
+	color: white;
+	font-size: 17px;
+	padding: 7px 13px;
+	border-radius: 3px;
+	text-transform: uppercase;
+}
+
+a.active,
+a:hover {
+	background: #1d075f;
+	transition: .5s;
+}
+
+.checkbtn {
+	font-size: 30px;
+	color: #fff;
+	float: right;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+}
+
+#check {
+	display: none;
+}
+
+@media (max-width: 952px) {
+	label.logo {
+		font-size: 30px;
+		padding-left: 50px;
+	}
+
+	nav ul li a {
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 858px) {
+	.checkbtn {
+		display: block;
+	}
+
+	ul {
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: #1d075f;
+		top: 80px;
+		left: -100%;
+		text-align: center;
+		transition: all .5s;
+	}
+
+	nav ul li {
+		display: block;
+		margin: 50px 0;
+		line-height: 30px;
+	}
+
+	nav ul li a {
+		font-size: 20px;
+	}
+
+	a:hover,
+	a.active {
+		background: none;
+		color: #5434af;
+	}
+
+	#check:checked~ul {
+		left: 0;
+	}
+}
+/* Menu END */
+
+.about {
+  text-align: center;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+}
+/*H3*/
+
+.picture {
+  width: 45%;
+  border: 1px solid #000;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #4b528e;
+  display: inline-block;
+  height: 500px;
+}
+
+img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.picture a {
+  border: 1px solid #000;
+  text-decoration: none;
+  color: #000;
+  background-color: #4b528e;
+  margin-top: 50px;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.card__img {
+  width: 800px;
+  height: 1080px;
+}
